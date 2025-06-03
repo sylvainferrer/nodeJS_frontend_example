@@ -13,7 +13,7 @@ pipeline {
             agent { label 'agent-lftp' }
             steps {
                 sh '''
-                   lftp -u hoopstore,'Sylferrer77*' ftp-hoopstore.alwaysdata.net -e "mirror -R ${WORKSPACE}/ www/ ; quit"
+                   lftp -u hoopstore,'Azerty77380' ftp-hoopstore.alwaysdata.net -e "mirror -R ${WORKSPACE}/ www/ ; quit"
                 '''
             }
         }
